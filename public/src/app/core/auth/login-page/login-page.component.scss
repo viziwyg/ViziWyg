@@ -1,0 +1,19 @@
+.login-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 100px;
+    box-shadow: 5px 5px 10px -10px rgba(0,0,0,.5);
+    background-color: white;
+
+    .form-actions {
+      display: flex;
+      // justify-content: center;
+    }
+  }
+}

@@ -122,5 +122,10 @@
       }
     }
   },
-  "defaultProject": "viziwyg-ui"
+  "defaultProject": "viziwyg-ui",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }
