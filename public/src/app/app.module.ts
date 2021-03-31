@@ -1,3 +1,5 @@
+import { DashboardsModule } from './core/dashboards/dashboards.module';
+import { DashboardService } from './core/dashboards/services/dashboard.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -11,13 +13,14 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 
 import { LoginPageComponent } from './core/auth/login-page/login-page.component';
-import { DashboardComponent } from './core/dashboards/dashboard/dashboard.component';
+import { DashboardComponent } from './core/dashboards/components/dashboard/dashboard.component';
+import { HeaderComponent } from './core/layout/header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginPageComponent,
-    DashboardComponent
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +29,9 @@ import { DashboardComponent } from './core/dashboards/dashboard/dashboard.compon
     MatInputModule,
     MatButtonModule,
     MatIconModule,
-    AppRoutingModule
+    AppRoutingModule,
+
+    DashboardsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

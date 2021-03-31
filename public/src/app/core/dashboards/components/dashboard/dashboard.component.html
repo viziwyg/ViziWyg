@@ -1,0 +1,18 @@
+
+<div class="viziwyg-page dashboard-page">
+
+  <div class="dashboard" *ngIf="dashboard; else noDash">
+    <div class="dashboard__head">
+      <div class="dashboard--title">{{dashboard.title}}</div>
+    </div>
+    <div class="dashboard__body">
+
+      <a mat-raised-button [routerLink]="['/dashboard/id', dashboard.uid, 'edit']">Edit</a>
+    </div>
+  </div>
+
+  <ng-template #noDash>
+    <button mat-raised-button (click)="createNew()">Create new</button>
+  </ng-template>
+
+</div>

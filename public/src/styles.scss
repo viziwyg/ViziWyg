@@ -3,12 +3,17 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
-.viziwyg-app,
-.viziwyg-page {
+.viziwyg-app {
   padding: 0;
   margin: 0;
   height: 100%;
   width: 100%;
 
   background-color: #fbfbfb;
+
+  .viziwyg-page {
+    padding: 0 30px;
+    height: 100%;
+    width: 100%;
+  }
 }

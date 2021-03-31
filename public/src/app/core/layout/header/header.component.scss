@@ -1,0 +1,19 @@
+.header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+
+  .welcome-msg {
+    font-size: 2em;
+  }
+
+  .header__action-bar {
+    display: flex;
+
+    .action-bar__action {
+      margin-left: 20px;
+    }
+  }
+}
