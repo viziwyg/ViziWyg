@@ -1,6 +1,8 @@
 <div class="dashboard-selector">
-  <select *ngIf="dashboards.length > 0; else noDash">
-    <option *ngFor="let dash of dashboards" [value]="dash.id">{{dash.title}}</option>
-  </select>
+  <ul *ngIf="dashboards.length > 0; else noDash">
+    <li *ngFor="let dash of dashboards">
+      <a [routerLink]="['/dashboard/id/' + dash.uid]">{{dash.title}}</a>
+    </li>
+  </ul>
   <ng-template #noDash>No Dashboards</ng-template>
 </div>

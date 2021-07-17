@@ -1,7 +1,6 @@
 import { DashboardService } from './../../services/dashboard.service';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { BehaviorSubject } from 'rxjs';
 import { Dashboard } from '../../models/dashboard.model';
 
 @Component({
